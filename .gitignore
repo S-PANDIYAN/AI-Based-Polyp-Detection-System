@@ -37,12 +37,11 @@ env/
 *.onnx
 models/*.h5
 
-# Dataset (large files)
-archive/Kvasir-SEG/Kvasir-SEG/images/
-archive/Kvasir-SEG/Kvasir-SEG/masks/
-dataset/train/
-dataset/test/
-dataset/validation/
+# Dataset (large files) - ENTIRE FOLDERS
+archive/
+dataset/
+cecum/
+test_samples/
 
 # Results
 results/*.png
