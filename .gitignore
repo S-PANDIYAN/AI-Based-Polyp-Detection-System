@@ -36,16 +36,26 @@ env/
 *.pt
 *.onnx
 models/*.h5
+!yolo11n.pt
+!yolov8n.pt
 
 # Dataset (large files) - ENTIRE FOLDERS
 archive/
 dataset/
 cecum/
 test_samples/
+yolo_dataset/
+yolo_clinical_dataset/
+yolo_clinical_training/
 
-# Results
-results/*.png
-results/*.jpg
+# Results and Training Outputs
+results/
+*.png
+*.jpg
+*.jpeg
+runs/
+weights/
+*.weights
 
 # IDE
 .vscode/
@@ -61,6 +71,14 @@ Thumbs.db
 
 # Streamlit
 .streamlit/
+
+# Node modules and frontend builds
+node_modules/
+dist/
+.vite/
+.next/
+build/
+*.local
 
 # Keep README and documentation
 !README.md
